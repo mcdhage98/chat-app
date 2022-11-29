@@ -5,7 +5,8 @@ import Grid from "@mui/material/Unstable_Grid2";
 import Card from "../../Components/Card";
 import ChatAppIcon from "../../Components/ChatAppIcon/ChatAppIcon";
 import ActiveCard from "../../Components/ActiveCard/ActiveCard";
-import CustomizedListItem from "../../Components/CustomizedListItem/CustomizedListItem"
+import CustomizedListItem from "../../Components/CustomizedListItem/CustomizedListItem";
+import ChatList from "../../Components/ChatList/ChatList";
 
 const ChatPage = () => {
   return (
@@ -17,7 +18,8 @@ const ChatPage = () => {
             <h5 className="appName">QuickChat</h5>
           </div>
           <ActiveCard/>
-          <CustomizedListItem/>
+          {/*<CustomizedListItem/>*/}
+          <ChatList/>
         </Grid>
         <Grid lg={6} sm={12} xs={12} order={{ xs: 3, lg: 2 }}>
           <Card>xs=4</Card>

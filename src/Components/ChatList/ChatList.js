@@ -12,7 +12,7 @@ import { Box, Divider } from "@mui/material";
 import NumberBadge from "../NumberBadge/NumberBadge";
 import {Avatar} from "@mui/material";
 import Avatars from '../../assets/Images';
-import "./CustomizedListItem.css";
+import "./ChatList.css";
 
 const CustomizedListItem = ({ list }) => {
   const [open, setOpen] = useState(false);
