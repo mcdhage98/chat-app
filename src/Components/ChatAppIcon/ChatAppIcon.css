@@ -1,0 +1,17 @@
+.chat-app-icon-wrapper{
+	position:relative;
+	width:80px;
+	height:80px;
+}
+
+.bolt{
+	position:absolute;
+	top:15px;
+	left:15px;
+}
+
+.chatCloud{
+	position:absolute;
+	top:10px;
+	left:10px;
+}

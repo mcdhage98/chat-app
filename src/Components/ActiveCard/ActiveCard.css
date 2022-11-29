@@ -1,0 +1,25 @@
+.activeCardWrapper{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.userNameWrapper{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.userName{
+	font-family: Poppins, serif;
+	font-weight: 600;
+	font-size: larger;
+}
+
+.userNameJob{
+	font-family: Poppins,serif;
+	font-weight: 300;
+	margin:0px;
+	font-size: 1 rem;
+}

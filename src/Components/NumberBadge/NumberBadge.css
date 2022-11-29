@@ -1,0 +1,19 @@
+.numberBadge{
+	height:22px;
+	width:22px;
+	border-radius: 50%;
+	background-color: #e7ebf0;
+	position:relative;
+	display:inline-block;
+	margin-left: 10px;
+	top:5px;
+}
+
+.numberBadge > span{
+	position:absolute;
+	left:5px;
+}
+
+.numberBadge.active{
+	background-color: #fc5655;
+}
