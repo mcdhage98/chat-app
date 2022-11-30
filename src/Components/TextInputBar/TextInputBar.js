@@ -4,12 +4,8 @@ import InputEmoji from "react-input-emoji";
 import RightArrow from "../../assets/svg/RightArrow";
 import AttachIcon from "../../assets/svg/AttachIcon";
 
-export default function TextInputBar() {
-  const [text, setText] = useState("");
-
-  function handleOnEnter(text) {
-    console.log("enter", text);
-  }
+export default function TextInputBar({text,handleOnEnter,setText, onClickHandler}) {
+  
   return (
     <div className="inputEmojiWrapper">
 		<AttachIcon/>
@@ -21,7 +17,7 @@ export default function TextInputBar() {
         placeholder="Enter Your Message Here"
 		borderRadius="5px"
       />
-	  <button className="sendButton">
+	  <button className="sendButton" onClick={onClickHandler}>
 		<p>Send</p>
 		<RightArrow/>
 		</button>

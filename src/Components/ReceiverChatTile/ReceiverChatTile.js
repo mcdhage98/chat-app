@@ -1,16 +1,24 @@
 import React from 'react';
 import OnlineAvatarBadge from '../OnlineAvatarBadge/OnlineAvatarBadge';
 import './ReceiverChatTile.css';
+import TimeAgo from 'javascript-time-ago';
+import en from 'javascript-time-ago/locale/en'
 
-export default function ReceiverChatTile(){
+TimeAgo.addDefaultLocale(en)
+
+
+const timeAgo = new TimeAgo('en-US')
+
+export default function ReceiverChatTile({message, time}){
+	console.log("messag, time"+message, time);
 	return(
 		<div>
 		<div className="receiverChatTile">
 		<OnlineAvatarBadge/>
 			<p className="receiverChatText">
-				Hello how r u
+				{message}
 			</p>
-			<p className="receiverChatDate">9 hr ago</p>
+			<p className="receiverChatDate">{time?timeAgo.format(time):''}</p>
 			
 			
 		</div>
