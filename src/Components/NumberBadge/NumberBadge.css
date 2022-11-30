@@ -10,7 +10,7 @@
 
 .numberBadge > span{
 	position:absolute;
-	left:5px;
+	left:6px;
 }
 
 .numberBadge.active{

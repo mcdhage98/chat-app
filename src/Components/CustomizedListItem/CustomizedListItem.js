@@ -10,35 +10,70 @@ import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import { Box, Divider } from "@mui/material";
 import NumberBadge from "../NumberBadge/NumberBadge";
-import {Avatar} from "@mui/material";
-import Avatars from '../../assets/Images';
+import { Avatar } from "@mui/material";
+import Avatars from "../../assets/Images";
 import "./CustomizedListItem.css";
 
-const CustomizedListItem = ({ list }) => {
+
+const CustomizedListItem = ({ list:argList, heading, totalNotifications }) => {
   const [open, setOpen] = useState(false);
+  const [list,setList] = useState(argList);
   const handleClick = () => {
     setOpen(!open);
   };
 
+  const setListClickHandler = (id)=>{
+		let newList = list.map((person)=>{
+			if(person.id == id) person.selected=!person.selected;
+			else person.selected = false;
+			return person;
+		})
+		setList(newList)
+  }
+
   return (
     <div className="customCollapsibleList">
-      <ListItemButton sx={{display:'flex', justifyContent:'space-between'}} disableGutters={true}  onClick={handleClick}>
-		<Box sx={{display:'flex', justifyContent:'flex-start',alignItems:'center'}}>
-            <p className="listMenu">Active Conversations</p>
-			<NumberBadge/>
-		</Box>
+      <ListItemButton
+        sx={{ display: "flex", justifyContent: "space-between" }}
+        disableGutters={true}
+        onClick={handleClick}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "flex-start",
+            alignItems: "center",
+          }}
+        >
+          <p className="listMenu">{heading}</p>
+          <NumberBadge notifications={totalNotifications} />
+        </Box>
 
-          {open ? <ExpandLess /> : <ExpandMore />}
+        {open ? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
       <Collapse in={open} timeout="auto" unmountOnExit>
         <List component="li" disablePadding>
           {list.map((person) => {
             return (
-              <ListItemButton key={person.id}>
-                <ListItemIcon>
-				  <Avatar alt="Remy" src={Avatars[`Avatar${person.id}`]} sx={{ width: 50, height: 50 }} />
-                </ListItemIcon>
-                <p className="listPerson"key={person.id}>{person.name} </p>
+              <ListItemButton
+                key={person.id}
+                sx={{ display: "flex", justifyContent: "space-between" }}
+				selected={person.selected}
+				onClick ={()=> setListClickHandler(person.id)}
+              >
+                <Box  sx={{ display: "flex", justifyContent: "flex-start" }}>
+                  <ListItemIcon>
+                    <Avatar
+                      alt={person.name}
+                      src={Avatars[`Avatar${person.id}`]}
+                      sx={{ width: 50, height: 50 }}
+                    />
+                  </ListItemIcon>
+                  <p className="listPerson" key={person.id}>
+                    {person.name}
+                  </p>
+                </Box>
+                <NumberBadge notifications={person.notifications} active/>
               </ListItemButton>
             );
           })}
@@ -49,42 +84,4 @@ const CustomizedListItem = ({ list }) => {
   );
 };
 
-export default function CategoriesResults() {
-  const chatPersons = [
-    {
-      id:1,
-	  name:'Henry Boyd',
-	  notifications:0
-    },
-	{
-		id:2,
-		name:'Martha Curtis',
-		notifications:2
-	},
-	{
-		id:3,
-		name:'Philip Tucker',
-		notifications:0
-	},{
-		id:4,
-		name:'Christine Reid',
-		notifications:0
-	},
-	{
-		id:5,
-		name:'Jerry Guzzmen',
-		notifications:0
-	},{
-		id:6,
-		name:'Russel Williams',
-		notificationsL: 0
-	}
-  ];
-  return (
-    <div>
-      <List component="nav" aria-labelledby="nested-list-subheader">
-          <CustomizedListItem list={chatPersons} />;
-      </List>
-    </div>
-  );
-}
+export default CustomizedListItem;

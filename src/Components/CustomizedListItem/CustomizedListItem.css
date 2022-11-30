@@ -5,4 +5,9 @@
 
 .listPerson{
 	font-family: Poppins,serif;
+	font-weight: 500;
+}
+
+.customCollapsibleList .MuiButtonBase-root.MuiListItemButton-root.Mui-selected{
+	background-color: #e7ebf0;
 }

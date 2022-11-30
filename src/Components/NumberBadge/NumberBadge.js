@@ -23,10 +23,11 @@
 //   }
 
 import "./NumberBadge.css";
-export default function NumberBadge({ active, content }) {
-  return (
-    <div className={`numberBadge ${active ? "active" : ""}`}>
-      <span>4</span>
-    </div>
-  );
+export default function NumberBadge({ active, notifications }) {
+  if (notifications > 0)
+    return (
+      <div className={`numberBadge ${active ? "active" : ""}`}>
+        <span>{notifications}</span>
+      </div>
+    );
 }
