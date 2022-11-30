@@ -23,7 +23,7 @@ const ChatPage = () => {
     <ChatWindowContext.Provider value={{chatWindowState,chatWindowDispatch}}>
     <Box sx={{ flexGrow: 1, margin: "20px" }}>
       <Grid className="gridWrapper" container spacing={2}>
-        <Grid lg={3} sm={6} xs={12} order={{ xs: 1, lg: 1 }}>
+        <Grid lg={3} sm={6} xs={12} order={{ xs: 1, lg: 1 }} sx={{minHeight:'100vh'}}>
           <div className="quickChatHeader">
             <ChatAppIcon />
             <h5 className="appName">QuickChat</h5>

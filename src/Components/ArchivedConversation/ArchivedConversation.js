@@ -15,7 +15,7 @@ export default function ArchivedConversation() {
   return (
     <div>
       <List component="nav" aria-labelledby="nested-list-subheader">
-          <CustomizedListItem list={chatPersons} totalNotifications={7} heading="Archived Conversations"/>;
+          <CustomizedListItem list={chatPersons} totalNotifications={7} heading="Archived Conversations"/>
       </List>
     </div>
   );

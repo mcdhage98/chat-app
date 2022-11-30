@@ -1,0 +1,39 @@
+div button.react-input-emoji--button{
+	position: absolute;
+	z-index: 1;
+	right: 0;
+} 
+
+button.react-input-emoji--button svg{
+	fill:#fdb800
+}
+
+.inputEmojiWrapper{
+	position: sticky;
+	bottom: 0;
+	width:100%;
+	z-index:1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sendButton{
+	color: white;
+	background-color:#0f4cff;
+	height:40px;
+	border: none;
+	border-radius: 5px;
+	display:flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin:5px;
+	padding: 10px;
+}
+
+.sendButton p{
+	margin-right: 5px;
+}
+
+
+
