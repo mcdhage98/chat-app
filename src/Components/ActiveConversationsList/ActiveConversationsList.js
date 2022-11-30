@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import List from "@mui/material/List";
 import "./ActiveConversationsList.css";
-import CustomizedListItem from "../CustomizedListItem/CustomizedListItem"
+import CustomizedListItem from "../CustomizedListItem/CustomizedListItem";
+import ActiveConversationListItem from "../ActiveConversationListItem/ActiveConversationListItem";
 
 
 
@@ -45,7 +46,7 @@ export default function ChatList() {
   return (
     <div>
       <List component="nav" aria-labelledby="nested-list-subheader">
-          <CustomizedListItem list={chatPersons} totalNotifications={4} heading="Active Converations"/>;
+          <ActiveConversationListItem list={chatPersons} totalNotifications={4} heading="Active Converations"/>;
       </List>
     </div>
   );

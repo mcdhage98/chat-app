@@ -10,5 +10,14 @@ const chatWindowReducer = (state,action)=>{
 	}
 }
 
+const changeAction = (chatWindowNumber) => {
+	return(
+		{
+			type:'change',
+			payload:chatWindowNumber
+		}
+	)
+}
 
-export { ChatWindowContext, chatWindowReducer}
+
+export { ChatWindowContext, chatWindowReducer , changeAction}

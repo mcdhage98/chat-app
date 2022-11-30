@@ -1,0 +1,24 @@
+.receiverChatTile{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position:relative;
+}
+
+.receiverChatText{
+	border-radius: 5px;
+	background-color: white;
+	color: black;
+	font-family: Poppins, serif;
+	padding:10px;
+	margin-left: 5px;
+	font-size:0.7rem;
+	box-shadow:  0 0 1px rgb(53 72 91 / 7%), 0 2px 2px rgb(0 0 0 / 1%), 0 4px 4px rgb(0 0 0 / 2%), 0 10px 8px rgb(0 0 0 / 3%), 0 15px 15px rgb(0 0 0 / 3%), 0 30px 30px rgb(0 0 0 / 4%), 0 70px 65px rgb(0 0 0 / 5%)
+}
+
+.receiverChatDate{
+	position:absolute;
+	top:42px;
+	left:47px;
+	font-size: xx-small;
+}

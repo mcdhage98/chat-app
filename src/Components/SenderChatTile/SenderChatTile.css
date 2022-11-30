@@ -1,0 +1,23 @@
+.senderChatTile{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position:relative;
+}
+
+.senderChatText{
+	border-radius: 5px;
+	background-color: #1a233c;
+	color: white;
+	font-family: Poppins, serif;
+	padding:10px;
+	margin-right: 5px;
+	font-size:0.7rem;
+}
+
+.senderChatDate{
+	position:absolute;
+	top:40px;
+	right:45px;
+	font-size: xx-small;
+}
