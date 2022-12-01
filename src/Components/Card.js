@@ -3,6 +3,7 @@ import { styled } from '@mui/material/styles';
 
 const Card = styled(Paper)(({ theme }) => ({
 	backgroundColor: '#e7ebf0',
+	borderRadius:'20px',
 	padding: theme.spacing(1),
 	textAlign: 'center',
 	boxShadow: '0px 0px'

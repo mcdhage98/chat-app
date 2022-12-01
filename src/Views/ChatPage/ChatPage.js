@@ -9,6 +9,7 @@ import CustomizedListItem from "../../Components/CustomizedListItem/CustomizedLi
 import ChatList from "../../Components/ActiveConversationsList/ActiveConversationsList";
 import ArchivedConversation from "../../Components/ArchivedConversation/ArchivedConversation";
 import ChatWindow from "../../Components/ChatWindow/ChatWindow";
+import EmailCard from "../../Components/EmailCard/EmailCard";
 
 
 import { ChatWindowContext,chatWindowReducer } from "../../Context/ChatWindowContext";
@@ -38,7 +39,7 @@ const ChatPage = () => {
           <ChatWindow/>
         </Grid>
         <Grid lg={3} sm={6} xs={12} order={{ xs: 2, lg: 3 }}>
-          <Card>xs=4</Card>
+          <EmailCard/>
         </Grid>
       </Grid>
     </Box>
