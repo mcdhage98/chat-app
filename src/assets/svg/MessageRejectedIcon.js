@@ -5,8 +5,8 @@ export default function MessageRejectedIcon() {
     <svg
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
-      width="512.000000pt"
-      height="512.000000pt"
+      width="20pt"
+      height="20pt"
       viewBox="0 0 512.000000 512.000000"
       preserveAspectRatio="xMidYMid meet"
     >

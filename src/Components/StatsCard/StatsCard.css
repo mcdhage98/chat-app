@@ -1,0 +1,79 @@
+.statblueprimary{
+color: #0f4cff;
+}
+.statbluesecondary{
+	background-color: #abc2fe;
+}
+.statbluetertiary{
+	background-color: #d9e4fd;
+}
+
+.statgreenprimary{
+	color: #22bb9d;
+}
+.statgreensecondary{
+		background-color: #c8f0ea;
+}
+.statgreentertiary{
+		background-color: #e3f6f3;
+}
+
+.statpurpleprimary{
+	color: #8d7ed2;
+}
+.statpurplesecondary{
+		background-color: #d9d3ff;
+}
+.statpurpletertiary{
+		background-color: #f7f3ff;
+}
+
+.statorangeprimary{
+	color:#fc5423;
+}
+.statorangesecondary{
+background-color: #fee1d3;
+}
+.statorangetertiary{
+	background-color: #fff1e8;
+}
+
+
+
+.iconContainer{
+	border-radius: 50%;
+	height:40px;
+	width:40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.statsCard{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding:5px;
+	border-radius: 20px;
+	margin:10px;
+}
+
+.statDescription{
+	display:flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left: 5px;
+}
+
+.statValue{
+	font-family: Poppins;
+	font-size: 1rem;
+	font-weight: 700;
+	margin: 0;
+}
+
+.statName{
+	font-size: 0.7rem;
+	margin: 0;
+	font-weight: 600;
+}
