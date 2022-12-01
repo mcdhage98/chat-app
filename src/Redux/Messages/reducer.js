@@ -58,7 +58,7 @@ const reducer = (state = initialState, { type, payload, chattingUser }) => {
         ...state,
         messageLoading: false,
         error: "",
-        [messageKey]: { ...state[messageKey], payload },
+        [messageKey]: [ ...state[messageKey], payload ],
       };
     case FETCH_MESSAGE_FAILURE:
       return {
@@ -72,7 +72,7 @@ const reducer = (state = initialState, { type, payload, chattingUser }) => {
         ...state,
         messageLoading: false,
         error: "",
-        [messageKey]: { ...state[messageKey], payload },
+        [messageKey]: [...state[messageKey], payload ],
       };
     default:
       return state;

@@ -10,7 +10,6 @@ TimeAgo.addLocale(en)
 const timeAgo = new TimeAgo('en-US')
 
 export default function SenderChatTile({message,time}){
-	console.log("Sender messag, time"+message, time);
 	return(
 		<div>
 		<div className="senderChatTile">
@@ -18,7 +17,7 @@ export default function SenderChatTile({message,time}){
 				{message}
 			</p>
 			<p className="senderChatDate">{time?timeAgo.format(time):''}</p>
-			<OnlineAvatarBadge/>
+			<OnlineAvatarBadge avatarNumber={0}/>
 			
 		</div>
 		</div>

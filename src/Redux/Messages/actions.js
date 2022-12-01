@@ -7,16 +7,16 @@ import {
   SAVE_MESSAGE,
 } from "./types";
 
-export const fetchMessage = () => {
+export const fetchMessage = ({chattingUser}) => {
   return (dispatch) => {
     dispatch(fetchMessageRequest());
     let id = Math.floor(Math.random() * 100) + 1;
     axios
-      .get(`https://jsonplaceholder.typicode.com/users/${id}`)
+      .get(`https://jsonplaceholder.typicode.com/posts/${id}`)
       .then((response) => {
         // response.data is the users
-        const message = response.data;
-        dispatch(fetchMessageSuccess(message));
+        const message = response.data.title;
+        dispatch(fetchMessageSuccess({message,chattingUser}));
       })
       .catch((error) => {
         // error.message is the error message
@@ -38,7 +38,7 @@ export const fetchMessageSuccess = ({ message, chattingUser }) => {
     payload: {
       message: message,
       sender: chattingUser,
-      time: Date(),
+      time: new Date(),
       uuid: uuidv4(),
     },
   };

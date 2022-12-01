@@ -9,12 +9,11 @@ TimeAgo.addDefaultLocale(en)
 
 const timeAgo = new TimeAgo('en-US')
 
-export default function ReceiverChatTile({message, time}){
-	console.log("messag, time"+message, time);
+export default function ReceiverChatTile({message, time, chatWindowNumber}){
 	return(
 		<div>
 		<div className="receiverChatTile">
-		<OnlineAvatarBadge/>
+		<OnlineAvatarBadge avatarNumber={chatWindowNumber}/>
 			<p className="receiverChatText">
 				{message}
 			</p>

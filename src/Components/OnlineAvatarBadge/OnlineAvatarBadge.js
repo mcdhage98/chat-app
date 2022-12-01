@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import Badge from '@mui/material/Badge';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
-import Avatar1 from "../../assets/Images/Avatar1.jpg";
+import Avatars from '../../assets/Images/index';
 import './OnlineAvatarBadge.css'
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
@@ -36,7 +36,8 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 }));
 
 
-export default function BadgeAvatars() {
+export default function BadgeAvatars({avatarNumber}) {
+  const avatar = Avatars[`Avatar${avatarNumber}`]
   return (
     <Stack direction="row" spacing={2}>
       <StyledBadge
@@ -44,7 +45,7 @@ export default function BadgeAvatars() {
         anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
         variant="dot"
       >
-        <Avatar alt="Remy Sharp" src={Avatar1} sx={{ width: 40, height: 40 }}/>
+        <Avatar alt="Remy Sharp" src={avatar} sx={{ width: 40, height: 40 }}/>
       </StyledBadge>
   
     </Stack>
