@@ -52,11 +52,13 @@ function ChatWindow(props) {
   return (
     <Card
       sx={{
-        minHeight: "100vh",
+        height:"135vh",
         position: "relative",
         display: "flex",
         justifyContent: "flex-end",
         flexDirection: "column",
+        overflowY:"scroll",
+        paddingTop:"5px"
       }}
     >
       {chatWindowState.chatWindowNumber}

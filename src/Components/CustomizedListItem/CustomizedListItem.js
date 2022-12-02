@@ -34,7 +34,7 @@ const CustomizedListItem = ({ list:argList, heading, totalNotifications }) => {
   return (
     <div className="customCollapsibleList">
       <ListItemButton
-        sx={{ display: "flex", justifyContent: "space-between" }}
+        sx={{ display: "flex", justifyContent: "space-between", height:"3rem", borderRadius:"5px"  }}
         disableGutters={true}
         onClick={handleClick}
       >
@@ -61,12 +61,12 @@ const CustomizedListItem = ({ list:argList, heading, totalNotifications }) => {
 				selected={person.selected}
 				onClick ={()=> setListClickHandler(person.id)}
               >
-                <Box  sx={{ display: "flex", justifyContent: "flex-start" }}>
+                <Box  sx={{ display: "flex", justifyContent: "flex-start", height:"3.5rem" }}>
                   <ListItemIcon>
                     <Avatar
                       alt={person.name}
                       src={Avatars[`Avatar${person.id}`]}
-                      sx={{ width: 50, height: 50 }}
+                      sx={{ width: 40, height: 40 }}
                     />
                   </ListItemIcon>
                   <p className="listPerson" key={person.id}>
