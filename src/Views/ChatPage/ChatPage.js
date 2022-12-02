@@ -27,7 +27,7 @@ const ChatPage = () => {
     <ChatWindowContext.Provider value={{chatWindowState,chatWindowDispatch}}>
     <Box sx={{ flexGrow: 1, margin: "20px" }}>
       <Grid className="gridWrapper" container spacing={2}>
-        <Grid lg={3} sm={6} xs={12} order={{ xs: 1, lg: 1 }} sx={{minHeight:'100vh'}}>
+        <Grid lg={3} md={6} sm={6} xs={12} order={{ xs: 1, sm:1, md:1, lg: 1 }} sx={{minHeight:'100vh'}}>
           <div className="quickChatHeader">
             <ChatAppIcon />
             <p className="appName">QuickChat</p>
@@ -36,10 +36,10 @@ const ChatPage = () => {
           <ChatList/>
           <ArchivedConversation/>
         </Grid>
-        <Grid lg={6} sm={12} xs={12} order={{ xs: 2, lg: 2 }}>
+        <Grid lg={6} md={12} sm={6} xs={12} order={{ xs: 2,sm:3,  md:3, lg: 2 }}>
           <ChatWindow/>
         </Grid>
-        <Grid lg={3} sm={6} xs={12} order={{ xs: 3, lg: 3 }}>
+        <Grid lg={3} md={6} xs={12} sm={6} order={{ xs: 3, sm:2, md:2, lg: 3 }}>
           <EmailCard/>
           <StatsContainer/>
           <OnboardClients/>

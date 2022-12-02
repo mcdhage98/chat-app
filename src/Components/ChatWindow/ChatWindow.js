@@ -61,7 +61,7 @@ function ChatWindow(props) {
         paddingTop:"5px"
       }}
     >
-      {chatWindowState.chatWindowNumber}
+      {/*chatWindowState.chatWindowNumber */}
       <div>
         {Chats}
         <TextInputBar

@@ -12,6 +12,7 @@ const AntSwitch = styled(Switch)(({ theme }) => ({
 	height: 16,
 	padding: 0,
 	display: 'flex',
+	cursor:'pointer',
 	'&:active': {
 	  '& .MuiSwitch-thumb': {
 		width: 15,
@@ -57,7 +58,7 @@ const AntSwitch = styled(Switch)(({ theme }) => ({
           label="Active"
           labelPlacement="end"
 		  sx={{
-			marginLeft:'10px'
+			marginLeft:'10px',
 		  }}
         />
 	)

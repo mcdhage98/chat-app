@@ -29,6 +29,7 @@ button.react-input-emoji--button svg{
 	justify-content: space-evenly;
 	margin:5px;
 	padding: 10px;
+	cursor: pointer;
 }
 
 .sendButton p{
