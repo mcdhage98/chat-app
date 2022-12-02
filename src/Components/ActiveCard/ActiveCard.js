@@ -10,7 +10,7 @@ export default function ActiveCard() {
   return (
     <Card>
       <div className="activeCardWrapper">
-        <Avatar alt="Remy" src={Avatar0} sx={{ width: 80, height: 80 }} />
+        <Avatar alt="Remy" src={Avatar0} sx={{ width: 60, height: 60 }} />
         <div className="userNameWrapper">
           <p className="userName">Bill BradFord</p>
           <SettingsIcon />

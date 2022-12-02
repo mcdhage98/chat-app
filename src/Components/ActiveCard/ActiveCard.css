@@ -14,12 +14,12 @@
 .userName{
 	font-family: Poppins, serif;
 	font-weight: 600;
-	font-size: larger;
+	font-size: 1.2rem;
 }
 
 .userNameJob{
 	font-family: Poppins,serif;
 	font-weight: 300;
 	margin:0px;
-	font-size: 1 rem;
+	font-size: 0.8rem;
 }

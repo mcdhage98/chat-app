@@ -62,6 +62,7 @@ export default function BarGraph() {
   });
 
   const options = {
+	maintainAspectRatio:false,
     scales: {
       x: {
         display: false,
@@ -89,7 +90,10 @@ export default function BarGraph() {
 		<p className="barGraphLegend2"> Activity</p>
 	  </div>
 
-      <Bar data={userData} options={options}></Bar>
+	<div className="chartWrapper">
+	<Bar data={userData} options={options}></Bar>
+	</div>
+     
 	  <div className="xAxis">
 		<p>MON</p>
 		<p className="active">TUE</p>

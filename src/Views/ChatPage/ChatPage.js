@@ -14,6 +14,7 @@ import EmailCard from "../../Components/EmailCard/EmailCard";
 
 import { ChatWindowContext,chatWindowReducer } from "../../Context/ChatWindowContext";
 import StatsContainer from "../../Components/StatsContainer/StatsContainer";
+import OnboardClients from "../../Components/OnboardClients/OnboardClients";
 
 
 const chatWindowInitialState = {
@@ -29,10 +30,9 @@ const ChatPage = () => {
         <Grid lg={3} sm={6} xs={12} order={{ xs: 1, lg: 1 }} sx={{minHeight:'100vh'}}>
           <div className="quickChatHeader">
             <ChatAppIcon />
-            <h5 className="appName">QuickChat</h5>
+            <p className="appName">QuickChat</p>
           </div>
           <ActiveCard/>
-          {/*<CustomizedListItem/>*/}
           <ChatList/>
           <ArchivedConversation/>
         </Grid>
@@ -42,6 +42,7 @@ const ChatPage = () => {
         <Grid lg={3} sm={6} xs={12} order={{ xs: 2, lg: 3 }}>
           <EmailCard/>
           <StatsContainer/>
+          <OnboardClients/>
         </Grid>
       </Grid>
     </Box>

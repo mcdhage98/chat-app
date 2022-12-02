@@ -3,8 +3,8 @@ import React from "react";
 export default function ChatCloud({className=''}) {
   return (
     <svg
-      width="50pt"
-      height="50pt"
+      width="35pt"
+      height="35pt"
       version="1.1"
       viewBox="0 0 700 700"
       xmlns="http://www.w3.org/2000/svg"

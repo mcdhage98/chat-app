@@ -1,0 +1,26 @@
+.linkButton{
+	display:flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: #0f4cff;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	height:30px;
+	padding: 10px;
+	width:120px;
+}
+
+.onboardClientsHeader{
+	font-family: Poppins, serif;
+	font-weight: 600;
+	font-size: larger;
+}
+
+
+ .sendMail {
+	position: absolute;
+	top: -10%;
+	left:40%;
+	transform: rotate(30deg);
+}

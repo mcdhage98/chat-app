@@ -3,8 +3,8 @@ import React from "react";
 export default function Bolt({className=''}) {
   return (
     <svg
-      width="40pt"
-      height="40pt"
+      width="25pt"
+      height="25pt"
       version="1.1"
       viewBox="0 0 700 700"
       xmlns="http://www.w3.org/2000/svg"
