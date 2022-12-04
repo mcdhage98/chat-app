@@ -36,7 +36,7 @@ const ChatPage = () => {
           <ChatList/>
           <ArchivedConversation/>
         </Grid>
-        <Grid lg={6} md={12} sm={6} xs={12} order={{ xs: 2,sm:3,  md:3, lg: 2 }}>
+        <Grid lg={6} md={12} sm={12} xs={12} order={{ xs: 2,sm:3,  md:3, lg: 2 }}>
           <ChatWindow/>
         </Grid>
         <Grid lg={3} md={6} xs={12} sm={6} order={{ xs: 3, sm:2, md:2, lg: 3 }}>
